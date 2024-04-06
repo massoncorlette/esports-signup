@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Esports Signup Page</title>
       
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="esports"></div>
+<div id="esports-img"></div>
 <div id="register-container">
   <form action="https://httpbin.org/post" method="post">
+    <legend>Start climbing the league today!</legend>
+    
     <div class="form-row">
       <div class="form-group">
         <label for="first_name">First Name</label>
@@ -27,7 +29,7 @@
         <input type="email" name="email" id="user_email" placeholder="you@example.com">
       </div>
       <div class="form-group">
-        <label for="number">Phone Number</label>
+        <label for="number">Esport Alias</label>
         <input type="number" name="number" id="user_number">
       </div>
     </div>
@@ -41,7 +43,13 @@
         <input type="password" name="cpassword" id="cpassword">
       </div>
     </div>
+    <button type="submit" id="submit">Submit</button>
+    <div class="img-flex-container">
+      <img src="images/gameday.svg" class="gameday">
+    </div>
   </form>
+
+</div>
 
 <script src="script.js"></script>
 </body>

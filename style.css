@@ -1,8 +1,8 @@
 * {border: 0px Solid red}
 
 :root {
-  --primary-color: #706b5c;
-  --secondary-color: #6c757d;
+  --primary-color: #d7f3f5;
+  --secondary-color: #d5dce2;
   --font-primary: 'Helvetica Neue', Arial, sans-serif;
   --font-secondary: 'Georgia', serif;
   --font-size: 16px;
@@ -17,21 +17,30 @@ body {
 #register-container {
   display: flex;
   flex: 1;
+  flex-direction: row;
+  position: relative;
   justify-content: center; 
   align-items: center; 
   background-color: var(--primary-color)
 }
 
-#esports {
+#esports-img {
   display: flex;
-  flex: 0.70;
+  flex: 0.60;
   background-image: url('images/esports.jpg');
   background-size: cover;
-  background-position: center; 
+  background-position: center;
+}
+
+legend {
+  margin-left: 9px;
+  margin-bottom: 20px;
 }
 
 form {
   padding: 10px;
+  background-color: rgba(250, 250, 250, 0.322);
+  border-radius: 6px;
 }
 
 .form-row {
@@ -54,6 +63,24 @@ input[type="password"] {
   padding: 8px;
   margin-top: 8px;
   background-color: var(--secondary-color)
+}
+
+.img-flex-container {
+  display: flex;
+}
+
+.gameday {
+  width: 100%;
+  height: 150px;
+  flex: 1;
+  top: 65%;
+  right: 0%;
+}
+
+#submit {
+  background-color: var(--secondary-color);
+  margin-left: 10px;
+  padding: 10px;
 }
 
 
