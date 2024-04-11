@@ -12,51 +12,63 @@
   <link rel="icon" href="images/controller.png" type="image/x-icon">
 </head>
 <body>
-<div id="esports-img"></div>
+<div id="esports-img">
+  <div id="link">
+    <a id="photo-cred" href="https://unsplash.com/@florianolv">Photo: Florian Olivo</a>
+  </div>
+    <a id="git-link" href="https://github.com/massoncorlette"><img src="images/gitlogo.png" id="github"></a>
+ 
+  </div>
 <div id="register-container">
   <button id="theme-btn" style="border: none; background: none; padding: 0;">
     <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="24">
       <path d="m422-232 207-248H469l29-227-185 267h139l-30 208ZM320-80l40-280H160l360-520h80l-40 320h240L400-80h-80Zm151-390Z"/></svg>
   </button>
-  <form action="https://httpbin.org/post" method="post">
-    <legend>Start climbing the league today!</legend>
-    
-    <div class="form-row">
-      <div class="form-group">
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name" id="first_name">
+    <form action="https://httpbin.org/post" method="post">
+      <legend>Start climbing the league today!</legend>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" id="first_name">
+        </div>
+        <div class="form-group">
+          <label for="last_name">Last Name</label>
+          <input type="text" name="last_name" id="last_name">
+        </div>
       </div>
-      <div class="form-group">
-        <label for="last_name">Last Name</label>
-        <input type="text" name="last_name" id="last_name">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="user_email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="number">Esport Alias</label>
+          <input type="text" name="number" id="user_number" required>
+        </div>
       </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="user_email" placeholder="you@example.com">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="user_password" required>
+        </div>
+        <div class="form-group">
+          <label for="cpassword">Confirm Password</label>
+          <input type="password" name="cpassword" id="cpassword" required>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="number">Esport Alias</label>
-        <input type="number" name="number" id="user_number">
+      <div id="submit-form">
+        <button type="submit" class="submit" id="create">Create Account</button>
+        <button type="submit" class="submit" id="login">Log In</button>
       </div>
-    </div>
-    <div class="form-row">
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="user_password">
+      
+      <div class="img-flex-container">
+        <img src="images/gaming.svg" class="gameday">
       </div>
-      <div class="form-group">
-        <label for="cpassword">Confirm Password</label>
-        <input type="password" name="cpassword" id="cpassword">
-      </div>
-    </div>
-    <button type="submit" id="submit">Submit</button>
-    <div class="img-flex-container">
-      <img src="images/gameday.svg" class="gameday">
-    </div>
-  </form>
-
+    </form>
+    <div id="world">
+      <img src="images/World Map.svg">
+    </div>  
 </div>
 
 <script src="script.js"></script>
